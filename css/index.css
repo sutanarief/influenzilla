@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-Family: "Inter", "Unbounded", sans-serif;
+  background: url('../images/bg_section_mobile_01.png'), lightgray 50% / cover no-repeat;
+}
+
+header {
+  display: flex;
+  margin: 30px 20px;
+  border: 2px solid #fff;
+}
+
+header#menuList {
+  flex-direction: column;
+}
+
+header>nav.brandName {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 34px;
+  border-right: 2px solid #fff;
+  font-size: 1rem;
+  font-family: "Unbounded";
+  font-weight: 600;
+}
+
+header>nav#menuToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  font-size: .75rem;
+  font-weight: 500;
+  color: #FFF;
+  cursor: pointer;
+}
+
+header {
+  color: #fff;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuList {
+  display: none;
+}
+
+#menuList>.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 22px 0;
+  text-align: center;
+  font-size: .75rem;
+  font-weight: 500;
+  color: #FFF;
+  cursor: pointer;
+}
+
+#menuList>.menu:not(:first-child) {
+  border-top: 2px solid #fff;
+}
