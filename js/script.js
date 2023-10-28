@@ -11,6 +11,5 @@ document.addEventListener('click', () => {
     body.style.background = "url('../images/bg_section_mobile_01.png'), lightgray 50% / cover no-repeat"
     menuToggle.textContent = 'MENU'
     menuList.style.display = 'none'
-
   }
 })
