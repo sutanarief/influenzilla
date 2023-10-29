@@ -4,7 +4,7 @@ const section2 = document.getElementById('sectionContainer02')
 const body = document.getElementsByTagName('BODY')[0]
 const menuList = document.getElementById('menuList')
 menuToggle.addEventListener('click', () => {
-  if(menuToggle.textContent === 'MENU') {
+  if(menuToggle.textContent.includes('MENU')) {
     body.style.background = '#111'
     menuToggle.textContent = 'Close'
     menuList.style.display = 'flex'

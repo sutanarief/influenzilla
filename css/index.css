@@ -8,8 +8,9 @@
 
 body {
   height: 100%;
+  color: #FFF;
   font-Family: "Inter", "Unbounded", sans-serif;
-  background: url('../images/bg_section_mobile_01.png'), lightgray 50% / cover no-repeat;
+  background: url('/images/bg_section_mobile_01.png'), lightgray 50% / cover no-repeat;
 }
 
 #sectionContainer01 {
@@ -20,7 +21,47 @@ body {
 #sectionContainer02 {
   display: flex;
   flex-direction: column;
+}
+
+#tabbingSection {
+  padding: 0 20px;
+}
+
+.bgDark {
   background: #111;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 28px 20px 26px 20px;
+}
+
+.content01 {
+  background: url('/images/bg_content_01.png'), lightgray -190.207px -357.678px / 167.686% 587.167% no-repeat;
+}
+
+.content02 {
+  background: url('/images/bg_content_02.png'), lightgray -190.207px -357.678px / 167.686% 587.167% no-repeat;
+}
+
+.content03 {
+  background: url('/images/bg_content_03.png'), lightgray -190.207px -357.678px / 167.686% 587.167% no-repeat;
+}
+
+.content04 {
+  background: url('/images/bg_content_04.png'), lightgray -190.207px -357.678px / 167.686% 587.167% no-repeat;
+}
+
+.sectionContent>h1{
+  font-weight: 300;
+}
+
+.sectionContent>p {
+  color: #E4E4E4;
+  font-size: .875rem;
+  font-weight: 400;
 }
 
 header {
@@ -52,12 +93,7 @@ header>nav#menuToggle {
   text-align: center;
   font-size: .75rem;
   font-weight: 500;
-  color: #FFF;
   cursor: pointer;
-}
-
-header {
-  color: #fff;
 }
 
 .menuContainer {
@@ -81,7 +117,6 @@ header {
   text-align: center;
   font-size: .75rem;
   font-weight: 500;
-  color: #FFF;
   cursor: pointer;
 }
 
@@ -111,11 +146,26 @@ header {
   margin-left: 20px;
 }
 
+.textContainer06 {
+  display: flex;
+  gap: 78px;
+  padding: 48px 20px 0 20px;
+}
+
 .gradientText {
   background: linear-gradient(91deg, #C6F1F7 -4.01%, #F983E9 36.14%, #B877FF 77.44%, #C2E9CD 106.11%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.inactive {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.inactiveContent {
+  display: none;
 }
 
 .headText {
@@ -154,7 +204,6 @@ header {
 .subText02 {
   display: block;
   width: 180px;
-  color: #FFF;
   font-family: 'Unbounded';
   font-weight: 400;
 }
@@ -176,6 +225,7 @@ header {
 .textWithBottom {
   display: inline-flex;
   flex-direction: column;
+  width: 265px;
 }
 
 .tick {
@@ -192,7 +242,7 @@ header {
 }
 
 .upperTick {
-  margin-bottom: -30px;
+  margin-bottom: -26px;
 }
 
 .shortcutContainer {
@@ -251,6 +301,46 @@ header {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 78px;
-  padding-bottom: 90px;
+  margin-top: 45px;
+  padding-bottom: 45px;
+}
+
+.tabHead {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid #FFF;
+}
+
+.tabItem:nth-child(even) {
+  border-left: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+}
+
+.tabItem {
+  padding: 20px 14px;
+  font-family: Unbounded;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.tabContent {
+  padding: 24px 16px;
+  border-left: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+}
+
+.tabContent>p {
+  margin-top: 24px;
+  color: #E4E4E4;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.tabContent>p:nth-child(2){
+  width: 182px;
+}
+
+.paragraphWidth {
+  width: 249px;
 }
