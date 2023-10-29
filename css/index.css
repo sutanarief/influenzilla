@@ -17,6 +17,12 @@ body {
   flex-direction: column;
 }
 
+#sectionContainer02 {
+  display: flex;
+  flex-direction: column;
+  background: #111;
+}
+
 header {
   display: flex;
   margin: 30px 20px 0 20px;
@@ -129,8 +135,11 @@ header {
   flex-wrap: wrap;
 }
 
+.headingText03 {
+  font-weight: 300;
+}
+
 .subText {
-  display: block;
   font-size: .75rem;
   font-style: normal;
   font-weight: 400;
@@ -138,10 +147,12 @@ header {
 }
 
 .subText01 {
+  display: block;
   width: 82px;
 }
 
 .subText02 {
+  display: block;
   width: 180px;
   color: #FFF;
   font-family: 'Unbounded';
@@ -149,29 +160,39 @@ header {
 }
 
 .subText03 {
+  display: block;
   width: 216px;
   font-size: .875rem;
   font-weight: 400
 }
 
 .textWithUpper {
-  display: flex;
+  display: inline-flex;
   margin: 0px 8px;
   flex-direction: column;
 }
 
+
+.textWithBottom {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.tick {
+  font-family: 'Unbounded';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -6.4px;
+    background: linear-gradient(91deg, #C6F1F7 -4.01%, #F983E9 36.14%, #B877FF 77.44%, #C2E9CD 106.11%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .upperTick {
   margin-bottom: -30px;
-  font-family: 'Unbounded';
-font-size: 32px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-letter-spacing: -6.4px;
-  background: linear-gradient(91deg, #C6F1F7 -4.01%, #F983E9 36.14%, #B877FF 77.44%, #C2E9CD 106.11%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 }
 
 .shortcutContainer {
@@ -180,7 +201,7 @@ background-clip: text;
   gap: 40px;
   flex-wrap: wrap;
   margin-top: 57px;
-  padding: 46px 20px;
+  padding: 45px 20px;
   opacity: 0.8;
   background: rgba(0, 0, 0, 0.70);
   white-space: nowrap;
@@ -192,4 +213,44 @@ background-clip: text;
   padding-bottom: 7px;
   border-bottom: 2px solid #FFF;
   cursor: pointer;
+}
+
+.minusMargin {
+  margin-left: -4px;
+}
+
+.iconContainer {
+  display: flex;
+}
+
+.textContainer04 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 64px 20px 31px 20px;
+  color: #E4E4E4;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.textContainer05 {
+  padding: 31px 20px;
+  padding: 64px 20px 31px 20px;
+  color: #E4E4E4;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.yearText {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: .75rem;
+}
+
+.paragraphContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 78px;
+  padding-bottom: 90px;
 }
