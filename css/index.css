@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   height: 100%;
   color: #FFF;
@@ -248,8 +252,10 @@ header>nav#menuToggle {
 .shortcutContainer {
   display: flex;
   align-self: flex-end;
+  justify-content: space-around;
   gap: 40px;
   flex-wrap: wrap;
+  width: 100%;
   margin-top: 57px;
   padding: 45px 20px;
   opacity: 0.8;
@@ -284,7 +290,6 @@ header>nav#menuToggle {
 }
 
 .textContainer05 {
-  padding: 31px 20px;
   padding: 64px 20px 31px 20px;
   color: #E4E4E4;
   font-size: .875rem;
@@ -343,4 +348,107 @@ header>nav#menuToggle {
 
 .paragraphWidth {
   width: 249px;
+}
+
+.sliderItem {
+  padding: 25px 20px;
+  color: #E4E4E4;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.sliderParagraph {
+  width: 267px;
+  margin-top: 24px;
+}
+
+#slider01 {
+  background: url('/images/bg_slider_01.png'), lightgray -400.555px -536.517px / 261.142% 587.167% no-repeat;
+}
+
+#slider02 {
+  background: url('/images/bg_test_02.png'), lightgray -400.555px -536.517px / 261.142% 587.167% no-repeat;
+}
+
+.hide {
+  display: none;
+}
+
+.sliderPagination {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+  padding-bottom: 60px;
+}
+
+.paginationItem {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: #D9D9D9;
+}
+
+.currentPage {
+  background: #B877FF;
+}
+
+.footerBrand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 34px;
+  font-size: 1rem;
+  font-family: "Unbounded";
+  font-weight: 600;
+}
+
+.footerBrandText {
+  display: flex;
+  align-self: center;
+  font-family: Unbounded;
+  font-size: .375rem;
+  font-weight: 600;
+  width: 76px;
+}
+
+.brandContainer {
+  display: flex;
+}
+
+.brandContainer {
+  display: flex;
+  margin: 0 20px 0 20px;
+  border: 2px solid #fff;
+}
+
+.footerMenu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.menuText {
+  padding: 22px 37px;
+  border-right: 2px solid #FFF;
+}
+
+.privacyText {
+  margin: auto;
+}
+
+footer {
+  padding-bottom: 25px;
+}
+
+
+@media screen and (min-width: 376px ) {
+  
+  body {
+    background: red;
+  }
 }

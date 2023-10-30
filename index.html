@@ -9,7 +9,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-BWYZ3ZNVCT');
+  gtag('config', 'G-BWYZ3ZNVCT', { cookie_flags: 'SameSite=None;Secure' });
 </script>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -22,6 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sutan Arief Sinar Abdurrachman</title>
 <link rel="stylesheet" href="css/index.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -76,11 +77,17 @@
       </div>
       <div class="shortcutContainer">
         <nav class="shortcutItem gradientText">
-          <a href="#aboutUs">digital branding</a>
+          <a href="#sectionContainer02">digital branding</a>
         </nav>
-        <nav class="shortcutItem gradientText">influence marketing</nav>
-        <nav class="shortcutItem gradientText">content creation</nav>
-        <nav class="shortcutItem gradientText">design/development</nav>
+        <nav class="shortcutItem gradientText">
+          <a href="#sectionContainer04">influence marketing</a>
+        </nav>
+        <nav class="shortcutItem gradientText">
+          <a href="#sectionContainer05">content creation</a>
+        </nav>
+        <nav class="shortcutItem gradientText">
+          <a href="#whatWeDo">design/development</a>
+        </nav>
       </div>
     </section>
     
@@ -137,7 +144,7 @@
     <section id="sectionContainer04" class="bgDark">
       <div class="textContainer05">
         <span class="yearText gradientText">Since 2006</span>
-        <h1 class="headText headingText03 gradientText">
+        <h1 id="expertise" class="headText headingText03 gradientText">
           Help our clients achive their business
           <span class="textWithBottom">
             <span>objectives</span>
@@ -193,7 +200,7 @@
         <span class="subText subText01">hi there, let's get started</span>
       </div>
       <div class="textContainer05">
-        <h1 class="headText headingText03 gradientText">
+        <h1 id="getStarted" class="headText headingText03 gradientText">
           Expertise and
           <span class="textWithBottom">
             <span>experience</span>
@@ -216,7 +223,7 @@
         <p>We take pride in our ability to create a cohesive brand identity, effective marketing strategies, and user-friendly websites and applications that help our clients achieve success.</p>
       </div>
       <div class="textContainer05">
-        <h1 class="headText headingText03 gradientText">
+        <h1 id="whatWeDo" class="headText headingText03 gradientText">
           <span class="textWithBottom">
             <span class="upperTick tick">˜˜˜˜˜˜˜</span>
             <span>Projects for our clients</span>
@@ -224,6 +231,70 @@
         </h1>
       </div>
     </section>
+    <section id="sectionContainer07" class="bgDark">
+      <div class="sliderContainer">
+        <div id="slider01" class="sliderItem">
+          <span class="yearText gradientText">branding</span>
+          <h1 class="headText headingText03">Food store identity</h1>
+          <div class="sliderParagraph">
+            <p>We create unique brand identities that resonate with your target audience and help you stand out in a crowded marketplace</p>
+          </div>
+        </div>
+        <div id="slider02" class="sliderItem">
+          <span class="yearText gradientText">web design</span>
+          <h1 class="headText headingText03">Technology startup site</h1>
+          <div class="sliderParagraph">
+            <p>We partnered with a technology startup to create a new website that would showcase their innovative product and attract investors.</p>
+          </div>
+        </div>
+        <div id="slider03" class="sliderItem hide">
+          <span class="yearText gradientText">marketing</span>
+          <h1 class="headText headingText03">Fashion instagram marketing</h1>
+          <div class="sliderParagraph">
+            <p>Our team helped a new fashion brand grow their Instagram following by over 200% in just three months.</p>
+          </div>
+        </div>
+        <div id="slider04" class="sliderItem hide">
+          <span class="yearText gradientText">development</span>
+          <h1 class="headText headingText03">Mobile and desktop services</h1>
+          <div class="sliderParagraph">
+            <p>Developing modern websites that are optimized for both desktop and mobile devices.<p>
+          </div>
+        </div>
+        <div id="slider05" class="sliderItem hide">
+          <span class="yearText gradientText">branding</span>
+          <h1 class="headText headingText03">Eco packaging design</h1>
+          <div class="sliderParagraph">
+            <p>We created marketing materials that were consistent with the new brand identity, such as business cards, brochures, and social media graphics.</p>
+          </div>
+        </div>
+        <div id="slider06" class="sliderItem hide">
+          <span class="yearText gradientText">marketing</span>
+          <h1 class="headText headingText03">Social media graphics</h1>
+          <div class="sliderParagraph">
+            <p>We provided the brand with a detailed social media strategy that outlined how they could continue to grow their following and engage with their audience in the future.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sliderPagination">
+        <div class="paginationItem currentPage"></div>
+        <div class="paginationItem"></div>
+        <div class="paginationItem"></div>
+      </div>
+    </section>
+    <footer id="footer" class="bgDark">
+      <div class="brandContainer">
+        <div class="footerBrand">
+          <img src="images/ico_star_gradient.png" alt="Gradient Star Icon">
+          <span class="gradientText">Influenzilla</span>
+        </div>
+        <span class="footerBrandText gradientText">bespoke design and marketing services</span>
+      </div>
+      <div class="footerMenu">
+        <span class="menuText gradientText">MENU</span>
+        <span class="privacyText gradientText">PRIVACY POLICY</span>
+      </div>
+    </footer>
   </main>
   <script src="js/script.js"></script>
 </body>
