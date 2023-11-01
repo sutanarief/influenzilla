@@ -22,7 +22,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sutan Arief Sinar Abdurrachman</title>
 <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- // Add the new slick-theme.css if you want the default styling -->
+<!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -53,6 +57,7 @@
         <nav class="menu">BLOG</nav>
         <nav class="menu"><img src="images/ico_globe.png" alt="Globe Icon"></nav>
     </header>
+    
     <section id="sectionContainer01">
       <div class="textContainer01">
         <h1 class="headText headingText01 gradientText">
@@ -61,19 +66,20 @@
         <span class="subText subText01 gradientText">hi there, let's get started!</span>
       </div>
       <div class="textContainer02">
-        <h1 class="headText headingText02 gradientText">
-          Influence 
-          <span class="textWithUpper">
-            <span class="upperTick tick">˜˜˜˜˜˜˜˜˜</span>
-            <span>your</span>
-          </span>
-          audience
-        </h1>
-        <span class="subText subText02">boost your brand with our marketing expertise</span>
-      </div>
-      <div class="textContainer03">
-        <img src="images/ico_star_02.png" alt="Ouline Star Icon">
-        <p class="subText03 gradientText">We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways.</p>
+        <div class="headTextContainer">
+          <h1 class="headText headingText02 gradientText">
+            Influence <span class="textWithUpper">
+              <span class="upperTick tick">˜˜˜˜˜˜˜˜˜</span>
+              <span> your</span>
+            </span>
+            audience
+          </h1>
+          <span class="subText subText02">boost your brand with our marketing expertise</span>
+        </div>
+        <div class="textContainer03">
+          <img src="images/ico_star_02.png" alt="Ouline Star Icon">
+          <p class="subText03 gradientText">We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways.</p>
+        </div>
       </div>
       <div class="shortcutContainer">
         <nav class="shortcutItem gradientText">
@@ -93,7 +99,7 @@
     
     <section id="sectionContainer02" class="bgDark">
       <div class="textContainer04">
-        <div class="iconContainer">
+        <div class="iconContainer mobile">
           <img src="images/ico_star_02.png" alt="Outline Star Icon">
           <img class="minusMargin" src="images/ico_star_02.png" alt="Ouline Star Icon">
           <img class="minusMargin" src="images/ico_star_02.png" alt="Ouline Star Icon">
@@ -105,16 +111,30 @@
       <div class="textContainer05">
         <span class="yearText gradientText">London 2006</span>
         <h1 id="aboutUs" class="headText headingText03 gradientText">
-          We turn your digital dreams into
+          We turn your digital 
+          <span class="textWithBottom">
+            <span>dreams</span>
+            <span class="upperTick tick desktopTick">˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜</span>
+          </span> into
           <span class="textWithBottom">
             <span>reality</span>
-            <span class="upperTick tick">˜˜˜˜˜˜˜˜˜˜˜˜</span>
+            <span class="upperTick tick mobile">˜˜˜˜˜˜˜˜˜˜˜˜</span>
           </span>
         </h1>
-        <div class="paragraphContainer">
-          <p>Our creative design bureau is based in the heart of London and specializes in digital branding, website design, and influence marketing.</p>
-          <p> 
-            We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways</p>
+        <div class="paragraphContainer01">
+          <div class="iconContainerDesktop">
+            <img src="images/ico_star_02.png" alt="Outline Star Icon">
+            <img class="minusMargin" src="images/ico_star_02.png" alt="Ouline Star Icon">
+            <img class="minusMargin" src="images/ico_star_02.png" alt="Ouline Star Icon">
+          </div>
+          <div class="paragraphContainer paragraphDesktop">
+            <p>Our creative design bureau is based in the heart of London and specializes in digital branding, website design, and influence marketing.</p>
+            <p> 
+              We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways</p>
+          </div>
+          <div class="desktopSince desktop">
+            <img src="images/img_sphere_desktop.png" width="216" height="211" alt="Round Sphere Image">
+          </div>
         </div>
       </div>
     </section>
@@ -124,7 +144,6 @@
         <h1 class="headText">01</h1>
         <p>We create unique brand identities that resonate with your target audience and help you stand out in a crowded marketplace</p>
       </div>
-      
       <div class="sectionContent content02">
         <h1 class="headText">02</h1>
         <p>We create unique brand identities that resonate with your target audience and help you stand out in a crowded marketplace</p>
@@ -143,17 +162,36 @@
 
     <section id="sectionContainer04" class="bgDark">
       <div class="textContainer05">
-        <span class="yearText gradientText">Since 2006</span>
-        <h1 id="expertise" class="headText headingText03 gradientText">
-          Help our clients achive their business
-          <span class="textWithBottom">
-            <span>objectives</span>
-            <span class="upperTick tick">˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜</span>
-          </span>
-        </h1>
-        <div class="paragraphContainer">
+        <span class="yearText gradientText mobile">Since 2006</span>
+        <div class="headTextContainer">
+          <h1 id="expertise" class="headText headingText03 gradientText">
+            Help our clients <span class="textWithBottom">
+              <span class="upperTick tick desktopTick">˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜</span>
+              <span>achive</span>
+            </span> their business
+            <span class="textWithBottom">
+              <span>objectives</span>
+              <span class="upperTick tick mobile">˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜</span>
+            </span>
+          </h1>
+
+        </div>
+        <div class="paragraphContainer mobile">
           <p>We specialize in creating unique and innovative designs that not only capture the essence of your business but also help you achieve your goals. We believe that great design is about creating a seamless user experience that engages and delights your audience, and we work hard to ensure that every design we create meets this high standard.
           </p>
+        </div>
+        <div class="textContainer06 desktop">
+          <span class="yearText gradientText">London 2006</span>
+          <div class="paragraphContainer paragraphDesktop">
+            <p>Influenzilla is a leading design and marketing agency that offers creative solutions to businesses of all sizes. Our team of experts specializes in creating unique and effective designs that help our clients stand out in a crowded market.</p>
+
+            <p>Our mission is to help our clients achieve their business objectives through innovative and effective design solutions. We believe that great design is more than just aesthetics. It's about creating a seamless user experience that engages and delights your audience.</p>
+          </div>
+          <div class="paragraphContainer paragraphDesktop">
+            <p>We take pride in our ability to understand the unique needs and goals of each of our clients, and to develop customized solutions that exceed their expectations. Our team of talented designers and marketers work closely with our clients to create a cohesive brand identity, effective marketing strategies, and user-friendly websites and applications.</p>
+
+            <p>We offer a wide range of services, including branding, web design, social media marketing, graphic design, and more. Our goal is to help our clients achieve success by providing them with the tools and resources they need to grow their business.</p>
+          </div>
         </div>
       </div>
       <section id="tabbingSection">
@@ -170,8 +208,10 @@
         </div>
         <div class="tabContent">
           <img src="images/img_sphere_01.png" alt="Round Sphere Image">
-          <p>Our team of experts specializes in creating unique and effective designs</p>
-          <p>We created marketing materials that were consistent with the new brand identity, such as business cards, brochures, and social media graphics.</p>
+          <div class="paragraphContainer">
+            <p>Our team of experts specializes in creating unique and effective designs</p>
+            <p>We created marketing materials that were consistent with the new brand identity, such as business cards, brochures, and social media graphics.</p>
+          </div>
         </div>
         
         <div class="tabContent inactiveContent">
@@ -186,25 +226,37 @@
           <p>We provided the brand with a detailed social media strategy that outlined how they could continue to grow their following and engage with their audience in the future.</p>
         </div>
       </section>
+      
+      <div class="desktopStar">
+        <img src="images/ico_star_02.png" alt="Outline Star Icon">
+      </div>
       <div class="textContainer04">
-        <div>
+        <div class="mobile">
           <img src="images/ico_star_02.png" alt="Outline Star Icon">
         </div>
         <p>Influenzilla is a leading design and marketing agency that offers creative solutions to businesses of all sizes. Our team of experts specializes in creating unique and effective designs that help our clients stand out in a crowded market.</p>
         <p>Our mission is to help our clients achieve their business objectives through innovative and effective design solutions. We believe that great design is more than just aesthetics. It's about creating a seamless user experience that engages and delights your audience.</p>
       </div>
     </section>
+
     <section id="sectionContainer05">
       <div class="textContainer06">
         <span class="subText subText01 gradientText">hi there, let's get started</span>
-        <span class="subText subText01">hi there, let's get started</span>
+        <div class="textContainer02">
+          <!-- <span class="subText subText01 desktopGreet">hi there, let's get started</span> -->
+          <span class="subText subText01">hi there, let's get started</span>
+        </div>
       </div>
       <div class="textContainer05">
         <h1 id="getStarted" class="headText headingText03 gradientText">
-          Expertise and
+          Expertise 
+          <span class="textWithUpper">
+            <span class="upperTick tick desktopTick">˜˜˜˜˜˜˜˜˜˜˜˜</span>
+            <span>and</span>
+          </span>
           <span class="textWithBottom">
             <span>experience</span>
-            <span class="upperTick tick">˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜</span>
+            <span class="upperTick tick mobile">˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜</span>
           </span>
         </h1>
         <div class="paragraphContainer">
@@ -212,6 +264,7 @@
         </div>
       </div>
     </section>
+
     <section id="sectionContainer06" class="bgDark">
       <div class="textContainer04">
         <div class="iconContainer">
@@ -219,60 +272,86 @@
           <img class="minusMargin" src="images/ico_star_02.png" alt="Ouline Star Icon">
           <img class="minusMargin" src="images/ico_star_02.png" alt="Ouline Star Icon">
         </div>
-        <p>Our team of talented designers and marketers works closely with each of our clients, taking the time to understand their unique needs and goals, and developing customized solutions that exceed their expectations.</p>
-        <p>We take pride in our ability to create a cohesive brand identity, effective marketing strategies, and user-friendly websites and applications that help our clients achieve success.</p>
+        <div class="paragraphContainer">
+          <p>Our team of talented designers and marketers works closely with each of our clients, taking the time to understand their unique needs and goals, and developing customized solutions that exceed their expectations.</p>
+          <p>We take pride in our ability to create a cohesive brand identity, effective marketing strategies, and user-friendly websites and applications that help our clients achieve success.</p>
+        </div>
+        <div class="paragraphContainer">
+          <p>So if you're a start-up looking to create a strong brand identity, or an established business looking to revamp your marketing strategy, we have the expertise and experience to help you succeed.</p>
+          <p>Contact us today to learn more about our services and how we can help your business grow. We look forward to hearing from you and starting this exciting journey together.</p>
+        </div>
       </div>
       <div class="textContainer05">
         <h1 id="whatWeDo" class="headText headingText03 gradientText">
           <span class="textWithBottom">
-            <span class="upperTick tick">˜˜˜˜˜˜˜</span>
-            <span>Projects for our clients</span>
+            <span class="upperTick tick">˜˜˜˜˜˜˜˜˜˜˜˜˜˜</span>
+            <span>Projects</span>
           </span>
+          for our clients
         </h1>
       </div>
     </section>
+
     <section id="sectionContainer07" class="bgDark">
       <div class="sliderContainer">
-        <div id="slider01" class="sliderItem">
-          <span class="yearText gradientText">branding</span>
-          <h1 class="headText headingText03">Food store identity</h1>
-          <div class="sliderParagraph">
-            <p>We create unique brand identities that resonate with your target audience and help you stand out in a crowded marketplace</p>
+        <div class="sliderWrapper">
+          <div id="slider01" class="sliderItem slider01">
+            <span class="yearText gradientText">branding</span>
+            <h1 class="headText headingText03">Food store identity</h1>
+            <div class="sliderParagraph">
+              <p>We create unique brand identities that resonate with your target audience and help you stand out in a crowded marketplace</p>
+            </div>
+          </div>
+          <div id="slider02" class="sliderItem slider02">
+            <span class="yearText gradientText">web design</span>
+            <h1 class="headText headingText03">Technology startup site</h1>
+            <div class="sliderParagraph">
+              <p>We partnered with a technology startup to create a new website that would showcase their innovative product and attract investors.</p>
+            </div>
+            <div class="arrowWrapper desktop">
+              <img class="arrowRight" src="images/ico_arrow_right.png" alt="Arrow Right">
+              <img class="arrowLeft" src="images/ico_arrow_left.png" alt="Arrow Left">
+            </div>
           </div>
         </div>
-        <div id="slider02" class="sliderItem">
-          <span class="yearText gradientText">web design</span>
-          <h1 class="headText headingText03">Technology startup site</h1>
-          <div class="sliderParagraph">
-            <p>We partnered with a technology startup to create a new website that would showcase their innovative product and attract investors.</p>
+        <div class="sliderWrapper hide">
+          <div id="slider03" class="sliderItem slider03">
+            <span class="yearText gradientText">marketing</span>
+            <h1 class="headText headingText03">Fashion instagram marketing</h1>
+            <div class="sliderParagraph">
+              <p>Our team helped a new fashion brand grow their Instagram following by over 200% in just three months.</p>
+            </div>
+          </div>
+          <div id="slider04" class="sliderItem slider04">
+            <span class="yearText gradientText">development</span>
+            <h1 class="headText headingText03">Mobile and desktop services</h1>
+            <div class="sliderParagraph">
+              <p>Developing modern websites that are optimized for both desktop and mobile devices.<p>
+            </div>
+            <div class="arrowWrapper desktop">
+              <img class="arrowRight" src="images/ico_arrow_right.png" alt="Arrow Right">
+              <img class="arrowLeft" src="images/ico_arrow_left.png" alt="Arrow Left">
+            </div>
           </div>
         </div>
-        <div id="slider03" class="sliderItem hide">
-          <span class="yearText gradientText">marketing</span>
-          <h1 class="headText headingText03">Fashion instagram marketing</h1>
-          <div class="sliderParagraph">
-            <p>Our team helped a new fashion brand grow their Instagram following by over 200% in just three months.</p>
+        <div class="sliderWrapper hide">
+          <div id="slider05" class="sliderItem slider05">
+            <span class="yearText gradientText">branding</span>
+            <h1 class="headText headingText03">Eco packaging design</h1>
+            <div class="sliderParagraph">
+              <p>We created marketing materials that were consistent with the new brand identity, such as business cards, brochures, and social media graphics.</p>
+            </div>
           </div>
-        </div>
-        <div id="slider04" class="sliderItem hide">
-          <span class="yearText gradientText">development</span>
-          <h1 class="headText headingText03">Mobile and desktop services</h1>
-          <div class="sliderParagraph">
-            <p>Developing modern websites that are optimized for both desktop and mobile devices.<p>
-          </div>
-        </div>
-        <div id="slider05" class="sliderItem hide">
-          <span class="yearText gradientText">branding</span>
-          <h1 class="headText headingText03">Eco packaging design</h1>
-          <div class="sliderParagraph">
-            <p>We created marketing materials that were consistent with the new brand identity, such as business cards, brochures, and social media graphics.</p>
-          </div>
-        </div>
-        <div id="slider06" class="sliderItem hide">
-          <span class="yearText gradientText">marketing</span>
-          <h1 class="headText headingText03">Social media graphics</h1>
-          <div class="sliderParagraph">
-            <p>We provided the brand with a detailed social media strategy that outlined how they could continue to grow their following and engage with their audience in the future.</p>
+          <div id="slider06" class="sliderItem slider06">
+            <span class="yearText gradientText">marketing</span>
+            <h1 class="headText headingText03">Social media graphics</h1>
+            <div class="sliderParagraph">
+              <p>We provided the brand with a detailed social media strategy that outlined how they could continue to grow their following and engage with their audience in the future.</p>
+            </div>
+            <div class="arrowWrapper desktop">
+              <img class="arrowRight" src="images/ico_arrow_right.png" alt="Arrow Right">
+              <img class="arrowLeft" src="images/ico_arrow_left.png" alt="Arrow Left">
+            </div>
           </div>
         </div>
       </div>
@@ -282,6 +361,7 @@
         <div class="paginationItem"></div>
       </div>
     </section>
+
     <footer id="footer" class="bgDark">
       <div class="brandContainer">
         <div class="footerBrand">
